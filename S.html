@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pendaftaran Santri Baru | Hidayatul Mubtadiin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --hijau:#0a5c4d;
+  --biru:#0b2c44;
+  --emas:#d4af37;
+  --abu:#f6f8fa;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Poppins',system-ui;
+  background:var(--abu);
+  color:#2f2f2f;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(11,44,68,.85),rgba(10,92,77,.85)),
+  url('hero.jpg') center/cover;
+  color:white;
+  padding:120px 20px;
+  text-align:center;
+}
+.hero h1{font-size:38px;margin:0;animation:fadeHero 1.2s}
+.hero p{max-width:720px;margin:18px auto 30px;animation:fadeHero 1.6s}
+.hero a{
+  padding:14px 40px;
+  background:linear-gradient(135deg,var(--emas),#f2d675);
+  color:#2c2c2c;
+  border-radius:999px;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:0 10px 30px rgba(212,175,55,.4);
+  animation:fadeHero 2s;
+}
+@keyframes fadeHero{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:none}
+}
+
+/* SECTION */
+section{padding:80px 20px;background:white}
+.container{max-width:1100px;margin:auto}
+.title{text-align:center;margin-bottom:30px}
+.title h2{font-size:30px;color:var(--biru);margin:0}
+.title p{color:#666;margin-top:10px}
+.divider{
+  width:120px;height:4px;
+  background:linear-gradient(90deg,transparent,var(--emas),transparent);
+  margin:0 auto 45px;
+}
+
+/* ANIMASI SCROLL */
+.fade-up{opacity:0;transform:translateY(40px);transition:.9s}
+.fade-up.show{opacity:1;transform:none}
+
+/* PROFIL */
+.profil-box{
+  background:#fff;
+  padding:38px;
+  border-radius:22px;
+  line-height:1.9;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+  border-top:5px solid var(--emas);
+}
+
+/* GALERI */
+.galeri{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:26px;
+}
+.galeri figure{
+  background:#fff;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 18px 45px rgba(0,0,0,.12);
+  transition:.35s;
+}
+.galeri figure:hover{transform:translateY(-6px)}
+.galeri img{width:100%;height:auto;display:block}
+.galeri figcaption{
+  padding:14px;
+  text-align:center;
+  background:#f7f9fb;
+  font-size:14px;
+}
+
+/* FORM */
+form{
+  max-width:720px;
+  margin:auto;
+  background:white;
+  padding:42px;
+  border-radius:26px;
+  box-shadow:0 20px 50px rgba(0,0,0,.1);
+  border-top:6px solid var(--emas);
+}
+.form-group{margin-bottom:20px}
+label{display:block;margin-bottom:6px}
+input,textarea{
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #ddd;
+}
+button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:999px;
+  background:linear-gradient(135deg,var(--hijau),var(--biru));
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:linear-gradient(135deg,var(--biru),var(--hijau));
+  color:white;
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .hero h1{font-size:26px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Pondok Pesantren Hidayatul Mubtadiin</h1>
+  <p>Pendidikan Islam Terpadu untuk Membentuk Generasi Beriman dan Berakhlak</p>
+  <a href="#daftar">Daftar Sekarang</a>
+</div>
+
+<section>
+  <div class="container fade-up">
+    <div class="title">
+      <h2>Profil Pondok</h2>
+      <p>Sejarah & Visi Pendidikan</p>
+    </div>
+    <div class="divider"></div>
+    <div class="profil-box">
+      Pondok Pesantren Hidayatul Mubtadiin adalah lembaga pendidikan Islam
+      yang berkomitmen membina santri agar beriman, berilmu, dan berakhlakul karimah.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="title fade-up">
+      <h2>Dokumentasi Pondok</h2>
+      <p>Kegiatan dan suasana santri</p>
+    </div>
+    <div class="divider"></div>
+    <div class="galeri">
+      <figure class="fade-up"><img src="foto1.jpg"><figcaption>Kegiatan Belajar</figcaption></figure>
+      <figure class="fade-up"><img src="foto2.jpg"><figcaption>Asrama Santri</figcaption></figure>
+      <figure class="fade-up"><img src="foto3.jpg"><figcaption>Pengajian</figcaption></figure>
+      <figure class="fade-up"><img src="foto4.jpg"><figcaption>Kegiatan Harian</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="daftar">
+  <div class="container">
+    <div class="title fade-up">
+      <h2>Pendaftaran Santri Baru</h2>
+      <p>Tahun Ajaran Baru</p>
+    </div>
+    <div class="divider"></div>
+
+    <form id="formDaftar" class="fade-up">
+      <div class="form-group"><label>Nama Lengkap</label><input name="nama" required></div>
+      <div class="form-group"><label>NIK</label><input name="nik" required></div>
+      <div class="form-group"><label>Tempat Lahir</label><input name="tempat_lahir" required></div>
+      <div class="form-group"><label>Tanggal Lahir</label><input type="date" name="tanggal_lahir" required></div>
+      <div class="form-group"><label>Alamat</label><textarea name="alamat" rows="3" required></textarea></div>
+      <div class="form-group"><label>Nama Wali</label><input name="nama_wali" required></div>
+      <div class="form-group"><label>No HP / WhatsApp</label><input name="no_hp" required></div>
+      <button>Kirim Pendaftaran</button>
+    </form>
+  </div>
+</section>
+
+<footer>© Pondok Pesantren Hidayatul Mubtadiin</footer>
+
+<script>
+/* ANIMASI SCROLL */
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")});
+},{threshold:.15});
+document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
+
+/* GOOGLE SHEET + WHATSAPP */
+const scriptURL="PASTE_URL_WEB_APP_APPS_SCRIPT_DI_SINI";
+const nomorWA="628xxxxxxxxxx"; // NOMOR PANITIA
+
+document.getElementById("formDaftar").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f=e.target;
+  const data={
+    nama:f.nama.value,
+    nik:f.nik.value,
+    tempat_lahir:f.tempat_lahir.value,
+    tanggal_lahir:f.tanggal_lahir.value,
+    alamat:f.alamat.value,
+    nama_wali:f.nama_wali.value,
+    no_hp:f.no_hp.value
+  };
+
+  fetch(scriptURL,{method:"POST",body:JSON.stringify(data)})
+  .then(()=>{
+    const pesan=`📌 *PENDAFTARAN SANTRI BARU*
+🏫 Pondok Pesantren Hidayatul Mubtadiin
+
+👤 Nama: ${data.nama}
+🆔 NIK: ${data.nik}
+🏠 Alamat: ${data.alamat}
+👨‍👩‍👦 Wali: ${data.nama_wali}
+📱 HP: ${data.no_hp}
+
+Mohon ditindaklanjuti.`;
+
+    window.open(`https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`,"_blank");
+    alert("✅ Pendaftaran berhasil!\nWhatsApp panitia akan terbuka.");
+    f.reset();
+  })
+  .catch(()=>alert("❌ Gagal mengirim data"));
+});
+</script>
+
+</body>
+</html>
